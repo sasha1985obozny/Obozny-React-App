@@ -1,0 +1,29 @@
+img {
+    border-radius: 50%;
+    transition: all .5s linear;
+    &:hover {
+        transform: rotate(360deg);
+    }
+}
+
+.photoContainer{
+    display: flex;
+    border: 2px solid #9d9b9d;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    .left {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.loader {
+    width: 100%;
+    height: calc(100vh - 85px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
