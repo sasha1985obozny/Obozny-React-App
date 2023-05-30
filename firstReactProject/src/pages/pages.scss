@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.not-found{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+.user-card {
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
