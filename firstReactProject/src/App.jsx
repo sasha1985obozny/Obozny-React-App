@@ -1,16 +1,26 @@
-import { Button } from "./components/Button/Button";
 import { Title } from "./components/Title/Title";
-import { Input } from "./components/Input/Input";
+import { useDispatch } from "react-redux";
+import { increment } from "./redux/counterSlice";
+import Increment from "./components/Increment/Increment";
+import Decrement from "./components/Decrement/Decrement";
+import Reset from "./components/Reset/Reset";
+import Counter from "./components/Counter/Counter";
+import './main.scss'
+
 
 
 function App() {
-  return (
-      <div>
-        <Title name = 'My first component' className = 'title'></Title>
-        <Input type = 'text' placeholder = 'My input' className = 'my-input'></Input>
-        <Button name = 'OK' className = 'button okButton'></Button>
-        <Button name = 'Cancel' className = 'button cancelButton'></Button>
-        <Button name = 'Submit' className = 'button submitButton'></Button>
+  // const dispatch = useDispatch();
+  // const handleIncrement = () => {
+  //   dispatch(increment)
+  // }
+  return (      
+      <div className="center">
+        <Title className = 'title'>СounterSlice з використанням Redux Toolkit</Title>
+        <Counter />
+        <Increment />
+        <Decrement />
+        <Reset />
       </div>
   );
 }
